@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-xxhdpi/bg_home_test_type.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_191b1d_12dp_solid.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_191b1d_16dp_solid.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_69cd9c_12dp_solid.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_answer_result_fragment_solid.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_bae4cd_2dp_sloid.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_home_test_type.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_question_not_select.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_question_selected.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_question_selector.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/question_content_text_color_selector.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/question_text_color_selector.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/layout/activity_launch.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/all_type_item_layout.xml" value="0.1947463768115942" />
+        <entry key="app/src/main/res/layout/all_type_layout.xml" value="0.1947463768115942" />
+        <entry key="app/src/main/res/layout/answer_result_fragment_layout.xml" value="0.1947463768115942" />
+        <entry key="app/src/main/res/layout/answer_result_layout.xml" value="0.1947463768115942" />
+        <entry key="app/src/main/res/layout/home_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/question_fragment_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/question_item_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/question_layout.xml" value="0.19927536231884058" />
+        <entry key="app/src/main/res/layout/result_open_fragment_layout.xml" value="0.1947463768115942" />
+        <entry key="app/src/main/res/layout/web_layout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
