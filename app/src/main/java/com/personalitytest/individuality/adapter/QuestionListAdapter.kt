@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.personalitytest.individuality.R
+import com.personalitytest.individuality.eventbus.EventbusBean
+import com.personalitytest.individuality.eventbus.EventbusCode
 import kotlinx.android.synthetic.main.question_item_layout.view.*
 import org.greenrobot.eventbus.EventBus
 
@@ -17,7 +19,7 @@ class QuestionListAdapter(private val context:Context,private val list:ArrayList
             view.setOnClickListener {
                 chooseIndex=layoutPosition
                 notifyDataSetChanged()
-                EventBus.getDefault().post(if (chooseIndex==0) "A" else "B")
+                EventbusBean(EventbusCode.CHOOSE_ANSWER_FINISH,str = if (chooseIndex==0) "A" else "B").send()
             }
         }
     }

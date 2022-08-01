@@ -1,9 +1,103 @@
 package com.personalitytest.individuality.helper
 
+import com.personalitytest.individuality.admob.AdmobType
+
 class Config {
     companion object{
         const val URL=""
         const val EMAIL=""
+
+        const val AD="""{
+    "${AdmobType.OPEN}": [
+        {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/3419835294",
+            "per_type": "kp",
+            "per_sort": 2
+        }, {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/1033173712",
+            "per_type": "cp",
+            "per_sort": 1
+        },
+        {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/3419835294A",
+            "per_type": "kp",
+            "per_sort": 3
+        }
+    ],
+    "${AdmobType.HOME}": [
+        {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110",
+            "per_type": "ys",
+            "per_sort": 1
+        }, {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110X",
+            "per_type": "ys",
+            "per_sort": 2
+        }
+    ],
+      "${AdmobType.ALL_TYPE}": [
+        {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110",
+            "per_type": "ys",
+            "per_sort": 1
+        }, {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110X",
+            "per_type": "ys",
+            "per_sort": 2
+        }
+    ],
+     "${AdmobType.ANSWER_RESULT}": [
+        {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110X",
+            "per_type": "ys",
+            "per_sort": 2
+        }, {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110",
+            "per_type": "ys",
+            "per_sort": 1
+        }
+    ],
+       "${AdmobType.QUESTION}": [
+        {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110",
+            "per_type": "ys",
+            "per_sort": 1
+        }, {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/2247696110X",
+            "per_type": "ys",
+            "per_sort": 2
+        }
+    ],
+    "${AdmobType.QUESTION_FINISH}": [
+     {
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/8691691433",
+            "per_type": "cp",
+            "per_sort": 2
+        },{
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/1033173712X",
+            "per_type": "cp",
+            "per_sort": 3
+        },{
+            "per_source": "admob",
+            "per_id": "ca-app-pub-3940256099942544/1033173712",
+            "per_type": "cp",
+            "per_sort": 1
+        }
+    ]
+}"""
 
 
         const val QUESTION_JSON="""[

@@ -6,9 +6,11 @@
         <entry key="app/src/main/res/drawable-xxhdpi/bg_home_test_type.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_191b1d_12dp_solid.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_191b1d_16dp_solid.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_191b1d_8dp_solid.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_69cd9c_12dp_solid.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_answer_result_fragment_solid.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_bae4cd_2dp_sloid.xml" value="0.29384615384615387" />
+        <entry key="app/src/main/res/drawable/bg_bae4cd_8dp_solid.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_home_test_type.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_question_not_select.xml" value="0.29384615384615387" />
         <entry key="app/src/main/res/drawable/bg_question_selected.xml" value="0.29384615384615387" />
@@ -22,10 +24,12 @@
         <entry key="app/src/main/res/layout/answer_result_fragment_layout.xml" value="0.1947463768115942" />
         <entry key="app/src/main/res/layout/answer_result_layout.xml" value="0.1947463768115942" />
         <entry key="app/src/main/res/layout/home_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/native_ad_layout.xml" value="0.20516304347826086" />
         <entry key="app/src/main/res/layout/question_fragment_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/question_item_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/question_layout.xml" value="0.19927536231884058" />
         <entry key="app/src/main/res/layout/result_open_fragment_layout.xml" value="0.1947463768115942" />
+        <entry key="app/src/main/res/layout/type_native_ad_layout.xml" value="0.20516304347826086" />
         <entry key="app/src/main/res/layout/web_layout.xml" value="0.25" />
       </map>
     </option>

@@ -83,4 +83,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewpager"
         android:background="@drawable/bg_191b1d_16dp_solid"/>
+    <include layout="@layout/native_ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

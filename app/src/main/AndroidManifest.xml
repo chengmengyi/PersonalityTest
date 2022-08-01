@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.personalitytest.individuality">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name="com.personalitytest.individuality.app.MyApp"
         android:allowBackup="true"
@@ -19,13 +21,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.personalitytest.individuality.page.HomeActivity" />
+        <activity android:name="com.personalitytest.individuality.page.HomeActivity"
+            android:launchMode="singleTask"/>
         <activity android:name="com.personalitytest.individuality.page.question.QuestionActivity" />
         <activity android:name="com.personalitytest.individuality.page.answer_result.AnswerResultActivity" />
         <activity android:name="com.personalitytest.individuality.page.answer_result.OpenResultActivity" />
         <activity android:name="com.personalitytest.individuality.page.all_type.AllTypeActivity"
             android:launchMode="singleTask"/>
         <activity android:name="com.personalitytest.individuality.page.web.WebActivity" />
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_id" />
     </application>
 
 </manifest>

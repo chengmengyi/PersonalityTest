@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.personalitytest.individuality.R
 import com.personalitytest.individuality.adapter.AnswerResultViewpagerAdapter
+import com.personalitytest.individuality.admob.AdmobImplManager
+import com.personalitytest.individuality.admob.NativeAdHelper
 import com.personalitytest.individuality.base.BaseActivity
 import com.personalitytest.individuality.bean.TypeBean
 import com.personalitytest.individuality.helper.CheckTestResultHelper
@@ -16,6 +18,8 @@ import kotlinx.android.synthetic.main.answer_result_layout.*
 class AnswerResultActivity:BaseActivity() {
     private val fragmentList= arrayListOf<Fragment>()
     private val titleList= arrayOf("Characteristics","Integration","Something You Like to Do")
+
+    private val answerResultHelper by lazy { NativeAdHelper(AdmobImplManager.getAnswerResultNativeImpl()) }
 
     override fun layoutId(): Int = R.layout.answer_result_layout
 
@@ -54,5 +58,15 @@ class AnswerResultActivity:BaseActivity() {
 
         viewpager.adapter=AnswerResultViewpagerAdapter(titleList,fragmentList,supportFragmentManager)
         tab_layout.setViewPager(viewpager)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        answerResultHelper.onLoadAd(this)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        answerResultHelper.onDestroy()
     }
 }

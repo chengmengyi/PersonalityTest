@@ -4,15 +4,24 @@ import android.content.Intent
 import android.net.Uri
 import android.view.Gravity
 import com.personalitytest.individuality.R
+import com.personalitytest.individuality.admob.AdmobImplManager
+import com.personalitytest.individuality.admob.AdmobType
+import com.personalitytest.individuality.admob.NativeAdHelper
 import com.personalitytest.individuality.base.BaseActivity
+import com.personalitytest.individuality.eventbus.EventbusBean
+import com.personalitytest.individuality.eventbus.EventbusCode
 import com.personalitytest.individuality.helper.Config
 import com.personalitytest.individuality.helper.showToast
 import com.personalitytest.individuality.page.all_type.AllTypeActivity
 import com.personalitytest.individuality.page.question.QuestionActivity
 import com.personalitytest.individuality.page.web.WebActivity
 import kotlinx.android.synthetic.main.home_layout.*
+import kotlinx.android.synthetic.main.home_layout.top_view
+import kotlinx.android.synthetic.main.question_layout.*
+import org.greenrobot.eventbus.Subscribe
 
 class HomeActivity:BaseActivity() {
+    private val homeNativeAdHelper by lazy { NativeAdHelper(AdmobImplManager.getHomeNativeImpl()) }
 
     override fun layoutId(): Int = R.layout.home_layout
 
@@ -48,5 +57,19 @@ class HomeActivity:BaseActivity() {
                 showToast("Contact us by email：${Config.EMAIL}")
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (refreshNativeAd){
+            homeNativeAdHelper.onLoadAd(this)
+        }
+
+    }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        homeNativeAdHelper.onDestroy()
     }
 }
