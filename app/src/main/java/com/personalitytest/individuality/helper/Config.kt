@@ -2,8 +2,8 @@ package com.personalitytest.individuality.helper
 
 class Config {
     companion object{
-        const val URL=""
-        const val EMAIL=""
+        const val URL="https://sites.google.com/view/personalitytestapp/home"
+        const val EMAIL="lucyyywu775@gmail.com"
 
 
         const val QUESTION_JSON="""[
