@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.personalitytest.individuality"
+        applicationId "com.demo.individuality"
         minSdk 23
         targetSdk 31
         versionCode 2
