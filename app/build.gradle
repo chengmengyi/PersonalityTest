@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -63,4 +65,7 @@ dependencies {
     implementation("com.blankj:utilcodex:1.31.0")
     implementation 'com.lzy.net:okgo:3.0.4'
     implementation "com.android.installreferrer:installreferrer:2.2"
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-crashlytics-ktx")
+    implementation("com.facebook.android:facebook-android-sdk:12.3.0")
 }

@@ -4,8 +4,8 @@ import com.demo.personalitytest.admob.AdmobType
 
 class Config {
     companion object{
-        const val URL=""
-        const val EMAIL=""
+        const val URL="https://sites.google.com/view/personalitytestapp/home"
+        const val EMAIL="lucyyywu775@gmail.com"
 
         const val AD="""{
     "${AdmobType.OPEN}": [

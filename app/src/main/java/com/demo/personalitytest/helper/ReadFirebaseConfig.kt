@@ -2,20 +2,15 @@ package com.demo.personalitytest.helper
 
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.ktx.remoteConfig
-import com.demo.personalitytest.BuildConfig
 import com.tencent.mmkv.MMKV
 
 object ReadFirebaseConfig {
 
     fun readConf(){
-        if (BuildConfig.DEBUG){
-            saveAdToLocal(Config.AD)
-        }else{
-            val remoteConfig = Firebase.remoteConfig
-            remoteConfig.fetchAndActivate().addOnCompleteListener {
-                if (it.isSuccessful){
-                    saveAdToLocal(remoteConfig.getString("per_ad"))
-                }
+        val remoteConfig = Firebase.remoteConfig
+        remoteConfig.fetchAndActivate().addOnCompleteListener {
+            if (it.isSuccessful){
+                saveAdToLocal(remoteConfig.getString("per_ad"))
             }
         }
     }
