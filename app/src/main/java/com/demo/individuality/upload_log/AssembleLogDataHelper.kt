@@ -173,7 +173,6 @@ object AssembleLogDataHelper {
         if (TextUtils.isEmpty(r)) {
             val referrerClient = InstallReferrerClient.newBuilder(myApp).build()
             referrerClient.startConnection(object : InstallReferrerStateListener {
-
                 override fun onInstallReferrerSetupFinished(responseCode: Int) {
                     try {
                         when (responseCode) {
@@ -191,12 +190,8 @@ object AssembleLogDataHelper {
                         }
                     } catch (e: Exception) {
 
-
                     }
                 }
-
-
-
                 override fun onInstallReferrerServiceDisconnected() {
                 }
             })

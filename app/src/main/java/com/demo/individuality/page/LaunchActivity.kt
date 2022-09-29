@@ -19,11 +19,11 @@ class LaunchActivity : BaseActivity() {
 
     override fun initView() {
         fullAdHelper.callAd()
-        AdmobImplManager.getHomeNativeImpl().call()
-        AdmobImplManager.getAllTypeNativeImpl().call()
-        AdmobImplManager.getAnswerResultNativeImpl().call()
-        AdmobImplManager.getQuestionNativeImpl().call()
-        AdmobImplManager.getQuestionFinishCpNativeImpl().call()
+//        AdmobImplManager.getHomeNativeImpl().call()
+//        AdmobImplManager.getAllTypeNativeImpl().call()
+//        AdmobImplManager.getAnswerResultNativeImpl().call()
+//        AdmobImplManager.getQuestionNativeImpl().call()
+//        AdmobImplManager.getQuestionFinishCpNativeImpl().call()
 
         valueAnimator = ValueAnimator.ofInt(0, 100).apply {
             duration = 10000L
