@@ -8,7 +8,6 @@ import com.personalitytest.individuality.admob.AdmobImplManager
 import com.personalitytest.individuality.admob.NativeAdHelper
 import com.personalitytest.individuality.base.BaseActivity
 import com.personalitytest.individuality.helper.Config
-import com.personalitytest.individuality.helper.a
 import com.personalitytest.individuality.helper.showToast
 import com.personalitytest.individuality.page.all_type.AllTypeActivity
 import com.personalitytest.individuality.page.question.QuestionActivity
