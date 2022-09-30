@@ -4,8 +4,7 @@ import android.app.Application
 import com.demo.individuality.helper.ActivityCallback
 import com.demo.individuality.helper.AllTypeHelper
 import com.demo.individuality.helper.ReadFirebaseConfig
-import com.demo.individuality.upload_log.AssembleLogDataHelper
-import com.demo.individuality.upload_log.UploadHelper
+import com.demo.individuality.upload_log.UploadLog
 import com.tencent.mmkv.MMKV
 
 
@@ -15,10 +14,9 @@ class MyApp:Application() {
         super.onCreate()
         myApp=this
         MMKV.initialize(this)
-        AssembleLogDataHelper.getReferrer()
         AllTypeHelper.readQuestionConf()
         ReadFirebaseConfig.readConf()
         ActivityCallback.register(this)
-        UploadHelper.uploadLog(this)
+        UploadLog.init(this)
     }
 }
